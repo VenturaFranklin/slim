@@ -3,9 +3,22 @@ window.config = {
   /** This is an array, but we'll only use the first entry for now */
   servers: [
     {
-      id: "local",
-      url: "http://localhost:8008/dicomweb",
-      write: true
+      id: "J4Care",
+      url: "https://test.j4care.com:8443/dcm4chee-arc/aets/DCM4CHEE/rs",
+      write: false
+    },
+    {
+      id: "Google Cloud",
+      url: "https://idc-external-006.uc.r.appspot.com",
+      write: false
+    },
+    {
+      id: "Neagen",
+      url: "https://cloud.neagen.com/ilp",
+      write: false,
+      qidoPathPrefix: "qrs",
+      wadoPathPrefix: "wrs",
+      stowPathPrefix: "stowrs"
     }
   ],
   annotations: [
